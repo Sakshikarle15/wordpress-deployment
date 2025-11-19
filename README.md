@@ -40,7 +40,7 @@
 
     sudo yum install httpd mariadb105-server php -y
 
- ![website ui](./img/ss-5.png)
+ ![website ui](./img/Ss-5.png)
 
     sudo systemctl start httpd mariadb php-fpm
     sudo systemctl enable httpd mariadb php-fpm
@@ -49,29 +49,29 @@
 ### Step 4: Install PHP Connector
 
     sudo yum install php8.4-mysqlnd.x86_64
-  ![website ui](./img/ss-6.png)  
+  ![website ui](./img/Ss-6.png)  
 
  ### Step 5: Download and Extract Wordpress
     cd/var/www/html
 
-  ![website ui](./img/ss-7.png)
+  ![website ui](./img/Ss-7.png)
 
     sudo get https://wordpress.org/latest.tar.gz
     tar -xvzf <latest.tar.gz>
-  ![website ui](./img/ss-8.png)
+  ![website ui](./img/Ss-8.png)
 ### Step 6: Create Wordpress database
 1.Generate username and password
 
     sudo mysql
     alter user@localhot identified by 'root';
-![website ui](./img/ss-9.png)
+![website ui](./img/Ss-9.png)
 
 2.Login to Mysql (mariadb105-server) 
 
      sudo mysql -u root -p
 
 
-![website ui](./img/ss-10.png)
+![website ui](./img/Ss-10.png)
 
 ### Step 7: Create Database
     create database wordpressdb;
